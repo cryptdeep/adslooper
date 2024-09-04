@@ -1,0 +1,69 @@
+body {
+    background: red;
+  }
+    #ads-snip {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 500px;
+      left: 0;
+      z-index: 999999999;
+      background: #000000AB;
+      color: white;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s;
+    }
+    #ads-snip.active { opacity: 1; visibility: visible; top: 0; }
+    #ads-snip.deactive { opacity: 0; visibility: hidden; top: 500px; }
+    #ads-snip .top {
+      height: 50px;
+      background: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 3px solid #222;
+    }
+    #ads-snip .top .l {}
+    #ads-snip .top .r {}
+    #ads-snip .top .r button {
+      color: white;
+      padding: 5px 10px;
+      background: #393939;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      font-size: 1rem;
+      transition: .2s;
+      user-select: none;
+    }
+    #ads-snip .top .r button:disabled {
+      filter: brightness(.5);
+    }
+    #ads-snip .top .r button:hover {
+      border: 1px dashed #EBA7009C;
+    }
+    #ads-snip .top .r button:active {
+      border: 1px dashed #EBA7009C;
+      background: #EBA7009C;
+      font-size: .9rem;
+      padding: calc(5px + 0.1rem) calc(10px + 0.1rem);
+    }
+    
+    
+    #ads-snip .bottom {
+      height: calc(100% - 53px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #ads-snip .bottom a {}
+    #ads-snip .bottom a img {
+      width: 100%;
+    }
+    .fa-telegram {
+      color: #00A9EB;
+      background: #fff;
+      border-radius: 50%;
+    }
+      
